@@ -14,11 +14,12 @@ public class OfferedService {
     @Column(columnDefinition = "TEXT")
     private String description;
 
-    private String icon; // nom d’icône ou chemin image
+    private String icon;
 
-    private String category; // ex : "Développement", "Formation", etc.
+    private String category;
 
-    public OfferedService() {}
+    public OfferedService() {
+    }
 
     public OfferedService(String title, String description, String icon, String category) {
         this.title = title;
@@ -31,30 +32,39 @@ public class OfferedService {
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getTitle() {
         return title;
     }
+
     public void setTitle(String title) {
         this.title = title;
     }
+
     public String getDescription() {
         return description;
     }
+
     public void setDescription(String description) {
         this.description = description;
     }
+
     public String getIcon() {
         return icon;
     }
+
     public void setIcon(String icon) {
         this.icon = icon;
     }
+
     public String getCategory() {
         return category;
     }
+
     public void setCategory(String category) {
         this.category = category;
     }

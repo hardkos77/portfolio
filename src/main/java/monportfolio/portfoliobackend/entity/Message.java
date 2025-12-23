@@ -22,7 +22,8 @@ public class Message {
     @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
     private LocalDateTime timestamp = LocalDateTime.now();
 
-    public Message() {}
+    public Message() {
+    }
 
     public Message(String senderName, String senderEmail, String content) {
         this.senderName = senderName;
@@ -30,34 +31,42 @@ public class Message {
         this.content = content;
     }
 
-    // do getter and setter
     public Long getId() {
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
+
     public String getSenderName() {
         return senderName;
     }
+
     public void setSenderName(String senderName) {
         this.senderName = senderName;
     }
+
     public String getSenderEmail() {
         return senderEmail;
     }
+
     public void setSenderEmail(String senderEmail) {
         this.senderEmail = senderEmail;
     }
+
     public String getContent() {
         return content;
     }
+
     public void setContent(String content) {
         this.content = content;
     }
+
     public LocalDateTime getTimestamp() {
         return timestamp;
     }
+
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
     }

@@ -40,7 +40,7 @@ public class AppointmentService {
         return repository.save(appt);
     }
 
-    @Scheduled(cron = "0 0 * * * *") // toutes les heures
+    @Scheduled(cron = "0 0 * * * *")
     public void removePastAppointments() {
         List<Appointment> all = repository.findAll();
         for (Appointment appt : all) {

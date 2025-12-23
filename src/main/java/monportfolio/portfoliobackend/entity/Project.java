@@ -15,7 +15,8 @@ public class Project {
     private String imageUrl;
     private String stack;
 
-    public Project() {}
+    public Project() {
+    }
 
     public Project(String title, String description, String githubUrl, String imageUrl, String stack) {
         this.title = title;
@@ -24,8 +25,6 @@ public class Project {
         this.imageUrl = imageUrl;
         this.stack = stack;
     }
-
-    // Getters et Setters
 
     public Long getId() {
         return id;

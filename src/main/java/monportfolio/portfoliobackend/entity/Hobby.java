@@ -12,14 +12,14 @@ public class Hobby {
     private String name;
     private String icon;
 
-    public Hobby() {}
+    public Hobby() {
+    }
 
     public Hobby(String name, String icon) {
         this.name = name;
         this.icon = icon;
     }
 
-    // Getters & setters
     public Long getId() {
         return id;
     }
